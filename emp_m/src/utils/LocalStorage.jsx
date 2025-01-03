@@ -213,8 +213,11 @@ export const setData = () => {
   localStorage.setItem("employees", JSON.stringify(employees));
   localStorage.setItem("admin",JSON.stringify(admin));
 };
-
+ setData()
 export const getData=()=>{
 const employee=JSON.parse(localStorage.getItem("employees"))
+
 const admin=JSON.parse(localStorage.getItem("admin"))
+
+return {employees,admin}
 }
